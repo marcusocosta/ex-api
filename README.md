@@ -1,5 +1,8 @@
 # Exemplo de api para cadastro de usuários
 
+Pré requisito: node 4.2.6 ou superior
+Para rodar: Clone o repositório. Entre na pasta e dê npm install
+
 ## POST
 ### /users
 

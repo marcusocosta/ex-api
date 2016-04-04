@@ -3,6 +3,7 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var morgan = require('morgan');
+var cors = require('cors');
 
 var config = require('./source/config');
 var logger = require('./source/logger');
@@ -22,6 +23,8 @@ morgan.token('reqbody', function(req) {
 morgan.token('resbody', function(req, res) {
   return JSON.stringify(res.body);
 });
+
+app.use(cors());
 
 app.use(bodyParser.json());
 
